@@ -30,6 +30,11 @@
 		h1 {  margin-top: 0;margin-bottom: 2rem;font-weight: 300;text-rendering: optimizeLegibility;line-height: 1;font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; color:#ff5707; }
 		h2 { font-size: 18px; padding-bottom: 0px; color:#ffffff; }
 
+		/* NEW NEW NEW */
+		h2.orangetext { color:#ff5707; }
+		thead { background: #323232; }
+		tr:hover { background: #242424; }
+		
 		.inner { padding: 15px; }
 		#headertitle { text-align: center; width: 100; font-weight: bold; }
 
@@ -55,29 +60,59 @@
 <b>^ Back to Top</b>
 </div></a>   
     <div>
-			<header id="headertitle"><h2>REPOSITORY README</h2></header><div class="inner" >
+		<div class="inner" >
 			
-<h2>Table of Contents</h2>
-<a href="#general-informations">General Informations</a><br />
-<a href="#requirements-to-compile">Requirements to Compile</a><br />
-<a href="#informations-how-to-modify-the-source-to-fit-your-needs">Informations How to Modify the Source to Fit your Needs</a><br />
-<a href="#help-issues">Help &amp; Issues</a><br />			
-			
-<h2 id="general-informations">General Informations</h2>
-<p>This  is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file.</p>
-<h2 id="requirements-to-compile">Requirements to Compile</h2>
-<p>This software has been programmed with Android Studio, its recommended to use this Development. Environment to Modify Source and Compile. You can move the source folder into the Android Studio Window.</p>
-<h2 id="informations-how-to-modify-the-source-to-fit-your-needs">Informations How to Modify the Source to Fit your Needs</h2>
+<h2>Table of Contents</h2><ul>
+<li><a href="#general-informations">General Informations</a></li>	
+<li><a href="#requirements-to-compile">Requirements to Compile</a></li>	
+<li><a href="#informations-how-to-modify-the-source-to-fit-your-needs">Informations How to Modify the Source to Fit your Needs</a></li>	
+<li><a href="#help-issues">Help &amp; Issues</a></li>			
+<li><a href="#links">Interesting URLs</a></li>				
+<li><a href="#autor">Autor</a></li>				
+<li><a href="#lic">License</a></li>			
+			</ul><hr>
+<h2 id="general-informations" class="orangetext">General Informations</h2>
+<p>This  is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file.</p><hr>
+<h2 id="requirements-to-compile"  class="orangetext">Requirements to Compile</h2>
+<p>This software has been programmed with Android Studio, its recommended to use this Development. Environment to Modify Source and Compile. You can move the source folder into the Android Studio Window.</p><hr>
+<h2 id="informations-how-to-modify-the-source-to-fit-your-needs"  class="orangetext">Informations How to Modify the Source to Fit your Needs</h2>
 <p>Change the var &quot;theURL&quot; to your Websites URL you want to use.<br>The var is in the File: &quot;source\app\src\main\java\com\bugfish\webapp\MainActivity.java&quot;  </p>
 <p>If this is needed, change the Image of the App, by replacing the image files in:<br>&quot;source\app\src\main\res\&quot;</p>
 <p>If needed, change to Gradle App-ID in the Gradle Files.<br>If you make 2 webapps with the same AppID, one will be installed if you try to install them simultanously on devices.  </p>
-<h2 id="help-issues">Help &amp; Issues</h2>
+<hr><h2 id="help-issues"  class="orangetext">Help &amp; Issues</h2>
 <ul>
-<li>My Forum can be used to contact me, register there and create a thread. We will respond as soon as possible. www.bugfish.eu</li>
+<li>My Forum can be used to contact me, register there and create a thread. We will respond as soon as possible. <a href="https://bugfish.eu">www.bugfish.eu</a></li>
 </ul>
-<h2 id="autor">Autor</h2>
-<p>Made by Bugfish (Jan-Maurice Dahlmanns) with help of libraries...</p>
+<hr><h2 id="links"  class="orangetext">Interesting URLs</h2><ul>
+<li>You can find the Documentation here:  </li>
+<a href="https://bugfishtm.github.io/Android-Web-App-Example/">https://bugfishtm.github.io/Android-Web-App-Example/</a><br /><br />
 
+
+<li>You can find the Github Repository here:</li>
+<a href="https://github.com/bugfishtm/Android-Web-App-Example">https://github.com/bugfishtm/Android-Web-App-Example</a><br /><br />
+
+<li>Visit my website on:  </li>
+<a href="https://bugfish.eu">https://bugfish.eu  </a><br /><br />
+
+<li>In case my website is offline see:  </li>
+<a href="https://bugfish-fs.000webhostapp.com/">https://bugfish-fs.000webhostapp.com/ </a> <br /><br />
+
+<li>This is my Blogspot website:  </li>
+<a href="https://bugfishtm.blogspot.com/">https://bugfishtm.blogspot.com/</a><br /><br />
+
+<li>My Personal Github Page with my Projects:  </li>
+<a href="https://bugfishtm.github.io">https://bugfishtm.github.io</a><br /><br /></ul>
+<hr><h2 id="autor"  class="orangetext">Autor</h2>
+<p>Made by Bugfish (Jan-Maurice Dahlmanns) with help of libraries...</p>
+<hr><h2 id="lic"  class="orangetext">License</h2>
+Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
+This Product is running with MIT LICENSE<br /><br />
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 				</div>
 
