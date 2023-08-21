@@ -20,3 +20,6 @@ https://bugfishtm.blogspot.com/
 
 My Personal Github Page with my Projects:  
 https://bugfishtm.github.io
+
+## Help
+If you need help visit www.bugfish.eu!
