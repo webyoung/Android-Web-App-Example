@@ -28,6 +28,7 @@
 		}
 		.submm li a {
 			font-size: 18px !important;
+			font-weight: normal !important;
 		}
 		header { 
 			background: #000000;  
@@ -49,11 +50,16 @@
 			padding: 0px 0px 0px 0px;
 			left: 0px;
 			width: 100vw;
+			
 		}
 		.main-menu li {
 			padding-left: 20px;
 			padding-right: 0px;
+			font-weight: bold;
 		}
+		.main-menu li a {
+			font-weight: bold;
+		}		
 		
 		footer { 
 			background: #080808; 
