@@ -13,122 +13,93 @@
 	<meta property="og:title" content="Android Web-App Example" />
 	<meta property="og:url" content="https://bugfishtm.github.io/Android-Web-App-Example" />
 	<meta property="og:image" content="./meta.png" />
-	<style>
-		html { font-size: 62.5%; background: url(bg.jpg); background-size:100%;}
-		body { font-size: 1.5em; line-height: 1.6; font-weight: 400;font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #FFFFFF; max-width:800px;margin:auto; background: #121212;}
-		header {  background: #242424; padding: 15px;   color:#FFFFFF; }
-
-		ul.main-menu { margin: 0;padding: 0;display: flex;flex-wrap: wrap;justify-content: left;list-style: none;}
-		ul.main-menu li a {margin-right:20px;font-size:2.0rem; border-bottom: solid transparent 3px; color:#cfd2da;}
-		ul.main-menu li a:hover {color:#FFFFFF;}
-		ul.main-menu li a.active { color:#FFFFFF; border-bottom-color:#ff5707;}
-
-		a { font-weight: normal; text-decoration: none;  color:#ff5707;}
-		a:hover {color: white !important;}
-		a:focus {outline: thin dotted;}
-
-		h1 {  margin-top: 0;margin-bottom: 2rem;font-weight: 300;text-rendering: optimizeLegibility;line-height: 1;font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; color:#ff5707; }
-		h2 { font-size: 18px; padding-bottom: 0px; color:#ffffff; }
-
-		/* NEW NEW NEW */
-		h2.orangetext { color:#ff5707; }
-		thead { background: #323232; }
-		tr:hover { background: #242424; }
+	<link rel="stylesheet" href="./stylesheet.css">
+	 <script src="./jquery.js"></script> 
+	 <script src="./datatable.js"></script> 
+	 <script>
+		function internal_show(newshowvar, thiselement) {
+			$(".internal_show").hide();
+			$(".test").hide();
+			$("#"+newshowvar).show();
+			$(".navitts").css('color', '');
+			thiselement.css('color', '#ff0c02');
+		}
 		
-		.inner { padding: 15px; }
-		#headertitle { text-align: center; width: 100; font-weight: bold; }
-
-		iframe{ width: 100%; margin-bottom: -5px; }
-		footer{ background: #242424; bottom: 0px; width: 100%; max-width: 800px; padding: 15px;box-sizing: border-box; text-align: center; color:#FFFFFF;}
-	</style>
+		
+		$( document ).ready(function() {
+			$(".internal_show").hide();
+			$("#show_info").show();
+			$(".startactivenav").css('color', '#ff0c02');
+		});		
+	 </script>
   </head>
   <body>
 <img src="logo.png" style="width: 100%; margin-bottom: -7px;">
     <header id="header">
 	  
-      <h1>Android Web-App Example</h1> <!------------------------------------>
+      <h1>Android Web-App Example (APK)</h1>Documentation and Informations
       
       <ul class="main-menu">
-        <li><a href="../" >Home</a></li>
-        <li><a href="#" style="color: white;">Web-App</a></li>
-        <li><a href="https://github.com/bugfishtm/Android-Web-App-Example" target="_blank">Github</a></li> <!------------------------------------>
+        <li><a href="https://bugfishtm.github.io" >Back</a></li>
+        <li><a href="#" class="navon">APK</a></li>
+        <li><a href="https://github.com/bugfishtm/Android-Web-App-Example" target="_blank">Github</a></li>
+        <li><a target="_blank" href="https://bugfish.eu">Bugfish</a></li>
         <li><a href="./impressum.html">Impressum</a></li>
         <li><a href="./privacy.html">Privacy</a></li>
-      </ul>                 
+      </ul><hr>     
+      <ul class="main-menu submm">
+        <li><a href="#" class="startactivenav navitts" onclick="internal_show('show_info', $(this))">Informations</a>	</li>
+        <li><a href="#" class="navitts" onclick="internal_show('help_show', $(this))">Help and URLs</a>			 </li>
+        <li><a href="#" class="navitts" onclick="internal_show('license_show', $(this))">License</a>	</li> 
+      </ul>  	  
     </header>
-     <a href="#header"><div style="z-index:1000; !important; background: black; position: fixed; top: 5px; right: 5px; width: 110px; height: 30px;font-size: 16px;padding: 5px;border-radius: 5px;cursor: pointer;">
-<b>^ Back to Top</b>
-</div></a>   
+     <a href="#header"><div class="gobacktotop"><b>^ Back to Top</b></div></a>     
     <div>
-		<div class="inner" >
+		<div class="inner">
 			
-<h2>Table of Contents</h2><ul>
-<li><a href="#general-informations">General Informations</a></li>	
-<li><a href="#requirements-to-compile">Requirements to Compile</a></li>	
-<li><a href="#informations-how-to-modify-the-source-to-fit-your-needs">Informations How to Modify the Source to Fit your Needs</a></li>	
-<li><a href="#help-issues">Help &amp; Issues</a></li>			
-<li><a href="#links">Interesting URLs</a></li>				
-<li><a href="#autor">Autor</a></li>				
-<li><a href="#lic">License</a></li>			
-			</ul><hr>
-<h2 id="general-informations" class="orangetext">General Informations</h2>
-<p>This  is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file.</p><hr>
-<h2 id="requirements-to-compile"  class="orangetext">Requirements to Compile</h2>
-<p>This software has been programmed with Android Studio, its recommended to use this Development. Environment to Modify Source and Compile. You can move the source folder into the Android Studio Window.</p><hr>
-<h2 id="informations-how-to-modify-the-source-to-fit-your-needs"  class="orangetext">Informations How to Modify the Source to Fit your Needs</h2>
-<p>Change the var &quot;theURL&quot; to your Websites URL you want to use.<br>The var is in the File: &quot;source\app\src\main\java\com\bugfish\webapp\MainActivity.java&quot;  </p>
-<p>If this is needed, change the Image of the App, by replacing the image files in:<br>&quot;source\app\src\main\res\&quot;</p>
-<p>If needed, change to Gradle App-ID in the Gradle Files.<br>If you make 2 webapps with the same AppID, one will be installed if you try to install them simultanously on devices.  </p>
-<hr><h2 id="help-issues"  class="orangetext">Help &amp; Issues</h2>
-<ul>
-<li>My Forum can be used to contact me, register there and create a thread. We will respond as soon as possible. <a href="https://bugfish.eu">www.bugfish.eu</a></li>
-</ul>
-<hr><h2 id="links"  class="orangetext">Interesting URLs</h2><ul>
-<li>You can find the Documentations here:  </li>
-<a href="https://bugfishtm.github.io/Android-Web-App-Example/" rel="noopener" target="_blank">https://bugfishtm.github.io/Android-Web-App-Example/</a><br /><br />
+		
+		<div class="internal_show" id="show_info">
+		<h2 id="general-informations" class="orangetext">General Informations</h2>
+		<p>This  is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file. With this project you can easy create your own websites Web-App. You just need to have Android Studio installed on your system, than you can open the project and change the requred data!</p>
+		<h2 id="requirements-to-compile"  class="orangetext">Requirements to Compile</h2>
+		<p>This software has been programmed with Android Studio, its recommended to use this Development. Environment to Modify Source and Compile. You can move the source folder into the Android Studio Window.</p>
+		<h2 id="informations-how-to-modify-the-source-to-fit-your-needs"  class="orangetext">Modify Source Code</h2>
+		<p>Change the var &quot;theURL&quot; to your Websites URL you want to use.<br>The var is in the File: &quot;source\app\src\main\java\com\bugfish\webapp\MainActivity.java&quot;  </p>
+		<p>If this is needed, change the Image of the App, by replacing the image files in:<br>&quot;source\app\src\main\res\&quot;</p>
+		<p>If needed, change to Gradle App-ID in the Gradle Files.<br>If you make 2 webapps with the same AppID, one will be installed if you try to install them simultanously on devices.  </p>
+		</div>
 
 
-<li>You can find the Github Repository here:</li>
-<a href="https://github.com/bugfishtm/Android-Web-App-Example" rel="noopener" target="_blank">https://github.com/bugfishtm/Android-Web-App-Example</a><br /><br />
+		<div class="internal_show" id="help_show">
+		<h2 id="links"  class="orangetext">Help & Contact</h2>
+		My Forum can be used to contact me, register there and create a thread. We will respond as soon as possible. <a href="https://bugfish.eu">www.bugfish.eu</a>
+		
+		<h2 id="links"  class="orangetext">Interesting URLs</h2><ul>
+		<li>You can find the Documentations here:  </li>
+		<a href="https://bugfishtm.github.io/Android-Web-App-Example/" rel="noopener" target="_blank">https://bugfishtm.github.io/Android-Web-App-Example/</a><br /><br />
+		<li>You can find the Github Repository here:</li>
+		<a href="https://github.com/bugfishtm/Android-Web-App-Example" rel="noopener" target="_blank">https://github.com/bugfishtm/Android-Web-App-Example</a><br /><br />
+		<li>Visit my website on:  </li>
+		<a href="https://bugfish.eu" rel="noopener" target="_blank">https://bugfish.eu  </a><br /><br />
+		<li>This is my Blogspot website:  </li>
+		<a href="https://bugfishtm.blogspot.com/" rel="noopener" target="_blank">https://bugfishtm.blogspot.com/</a><br /><br />
+		<li>My Personal Github Page with my Projects:  </li>
+		<a href="https://bugfishtm.github.io" rel="noopener" target="_blank">https://bugfishtm.github.io</a><br /><br /></ul>
+		</div>
 
-<li>Visit my website on:  </li>
-<a href="https://bugfish.eu" rel="noopener" target="_blank">https://bugfish.eu  </a><br /><br />
 
-<li>In case my website is offline see:  </li>
-<a href="https://bugfish-fs.000webhostapp.com/" rel="noopener" target="_blank">https://bugfish-fs.000webhostapp.com/ </a> <br /><br />
+		<div class="internal_show" id="license_show"><h2 id="lic"  class="orangetext">License</h2>
+		Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
+		This Product is running with MIT LICENSE<br /><br />
 
-<li>This is my Blogspot website:  </li>
-<a href="https://bugfishtm.blogspot.com/" rel="noopener" target="_blank">https://bugfishtm.blogspot.com/</a><br /><br />
+		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
 
-<li>My Personal Github Page with my Projects:  </li>
-<a href="https://bugfishtm.github.io" rel="noopener" target="_blank">https://bugfishtm.github.io</a><br /><br /></ul>
-<hr><h2 id="autor"  class="orangetext">Autor</h2>
-<p>Made by Bugfish (Jan-Maurice Dahlmanns) with help of libraries...</p>
-<hr><h2 id="lic"  class="orangetext">License</h2>
-Copyright 2022 www.bugfish.eu Jan-Maurice Dahlmanns (Bugfish)<br />
-This Product is running with MIT LICENSE<br /><br />
+		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
+		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+		</div>
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-				</div>
-			  <header id="headertitle"><h2>MY PROJECT PAGES</h2></header><div class="inner">
-			  <ul>
-				<li><a href="https://bugfish.eu" target="_blank" rel="noopener">Website</a></li>
-				<li><a href="https://bugfishtm.blogspot.com/" target="_blank" rel="noopener">Blog</a></li>
-				<li><a href="https://www.youtube.com/c/bugfishtm" target="_blank" rel="noopener">Youtube</a></li>
-				<li><a href="https://www.youtube.com/channel/UC3ikaOiJwdKRfzsKDiFUSyA" target="_blank" rel="noopener">Youtube Artist Account</a></li>
-				<li><a href="https://github.com/bugfishtm" target="_blank" rel="noopener">Github</a></li>
-				<li><a href="https://pixabay.com/de/users/bugfish-15886987/" target="_blank" rel="noopener">Pixabay</a></li>
-				<li><a href="https://bugfish.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a></li>
-				<li><a href="https://open.spotify.com/artist/22t8XUzb2rVqKywyCaS36k" rel="noopener" target="_blank">Spotify</a></li>
-				<li><a href="https://www.dailymotion.com/bugfish" target="_blank" rel="noopener">Dailymotion</a></li>
-				<li><a href="https://www.deviantart.com/bxgfxsh" target="_blank" rel="noopener">DeviantArt</a></li>
-				<li><a href="https://jan-maurice-dahlmanns.de" target="_blank" rel="noopener">About Me</a></li>
-			  </ul></div>  
     </div>
-    <footer>  Jan-Maurice Dahlmanns [<a href="https://www.bugfish.eu/aboutme" target="_blank">Bugfish</a>] - Kattowitzerstraße 2b - 41065 Mönchengladbach - <a href="mailto:contact@bugfish.eu">contact@bugfish.eu</a> </footer>
+
   </body>
 </html>
