@@ -1,3 +1,7 @@
+![Bugfish](https://img.shields.io/badge/Bugfish-Software-orange)
+![Status](https://img.shields.io/badge/Status-Finished-green)
+![License](https://img.shields.io/badge/License-MIT-black)
+
 # Android Webapp Example
 
 You can find the documentation in the docs folder. Just open the index.html file in your webbrowser.
