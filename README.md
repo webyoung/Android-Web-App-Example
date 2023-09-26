@@ -5,28 +5,13 @@
 
 # Android Webapp Example
 
+Repository: https://github.com/bugfishtm/Android-Web-App-Example  
+Documentation: https://bugfishtm.github.io/Android-Web-App-Example/  
+You can find the available documentation in this repositories "docs" folder!
+
 ## General Informations
 
-This is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file. With this project you can easy create your own websites Web-App. You just need to have Android Studio installed on your system, than you can open the project and change the requred data!
-
-## Documentations
-You can find the documentation in the docs folder. Just open the index.html file in your webbrowser.
-
-You can find the Documentation here:  
-https://bugfishtm.github.io/Android-Web-App-Example/
-
-
-You can find the Github Repository here:
-https://github.com/bugfishtm/Android-Web-App-Example
-
-Visit my website on:  
-https://bugfish.eu  
-
-This is my Blogspot website:  
-https://bugfishtm.blogspot.com/
-
-My Personal Github Page with my Projects:  
-https://bugfishtm.github.io
+This is a ready to use Android Studio Project to compile a simple Webapp with some Controls at the bottom (Forward, Back, Home) You can just change the related URL inside the main.java file and compile it - after that you have a finished .apk file. With this project you can easy create your own websites Web-App. You just need to have Android Studio installed on your system, than you can open the project and change the required data! This will give you the possibility to easy deploy apps related to your website, if you need them!
 
 ## Requirements to Compile
  
@@ -43,5 +28,5 @@ If this is needed, change the Image of the App, by replacing the image files in:
 If needed, change to Gradle App-ID in the Gradle Files.
 If you make 2 webapps with the same AppID, one will be installed if you try to install them simultanously on devices.
 
-## Help
-If you need help visit www.bugfish.eu!
+## Issues
+If you need help visit www.bugfish.eu! Besides that you can contact request@bugfish.eu if you have any issues. We will do the best to provide help!
