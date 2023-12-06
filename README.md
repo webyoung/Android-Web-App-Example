@@ -26,7 +26,7 @@ To customize the web app for your specific needs, follow these steps:
 2. If necessary, replace the default app image by replacing the image files located in:
    "source\app\src\main\res/"
 
-3. If you intend to create multiple web apps, remember to update the Gradle App-ID in the Gradle files. Using the same App-ID for multiple web apps may result in conflicts when installing them on devices simultaneously.
+3. If you intend to create multiple web apps, remember to update the Gradle App-ID in the Gradle files. Using the same App-ID for multiple web apps may result in conflicts when installing them on devices simultaneously!
 
 ## Support and Assistance
 
