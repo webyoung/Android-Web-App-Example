@@ -1,8 +1,3 @@
-![Bugfish](https://img.shields.io/badge/Bugfish-Template-orange)
-![Status](https://img.shields.io/badge/Status-Finished-green)
-![License](https://img.shields.io/badge/License-GPLv3-black)
-![Version](https://img.shields.io/badge/Version-1.0-white)
-
 # Android WebApp Example
 
 **Repository:** [GitHub Repository](https://github.com/bugfishtm/Android-Web-App-Example)  
