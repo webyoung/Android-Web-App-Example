@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="support.html">
+        <link rel="next" href="download.html">
       
       
       <link rel="icon" href="favicon.ico">
@@ -18,7 +18,7 @@
     
     
       
-        <title>Home - Android WebView App</title>
+        <title>Introduction - Android WebView App</title>
       
     
     
@@ -28,7 +28,6 @@
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
-
       <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -40,8 +39,8 @@
 	{
 	  "@context": "http://schema.org",
 	  "@type": "TechArticle",
-	  "headline": "Home",
-	  "description": "Presenting a Streamlined Android Studio Template for an Android WebView App, perfectly tailored to showcase your website. Detailed documentation is available for comprehensive insights into this project. It is generously shared under the GPLv3 License, allowing full access to the open-source code.,
+	  "headline": "Introduction",
+	  "description": "Presenting a Streamlined Android Studio Template for an Android WebView App, perfectly tailored to showcase your website. Detailed documentation is available for comprehensive insights into this project. It is generously shared under the GPLv3 License, allowing full access to the open-source code.",
 	  "articleSection": "Introduction",
 	  "datePublished": "2024-08-19",
 	  "dateModified": "2024-08-19",
@@ -67,10 +66,11 @@
 	<meta name='author' content='bugfish, ynvnzmlzaa@gmail.com'>
 
     
-	<meta property="og:title" content="Home - Android WebView App"/>
+	<meta property="og:title" content="Introduction - Android WebView App"/>
 	<meta name="description" content="Presenting a Streamlined Android Studio Template for an Android WebView App, perfectly tailored to showcase your website. Detailed documentation is available for comprehensive insights into this project. It is generously shared under the GPLv3 License, allowing full access to the open-source code.">  
 	<meta name="og:description" content="Presenting a Streamlined Android Studio Template for an Android WebView App, perfectly tailored to showcase your website. Detailed documentation is available for comprehensive insights into this project. It is generously shared under the GPLv3 License, allowing full access to the open-source code.">  
 	<meta property="og:image" content="./meta.png" />   
+
     
     
       
@@ -90,7 +90,16 @@
     
     
     
-  </head>
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -144,7 +153,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Introduction
             
           </span>
         </div>
@@ -285,7 +294,7 @@
           
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -296,7 +305,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Introduction
   </span>
   
 
@@ -357,6 +366,26 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="download.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Download
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -537,11 +566,7 @@
                 
                   
 
- 
-
- 
-<a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/Android-Web-App-Example">Github</a> 
- <a class="md-button" rel="noopener" target="_blank" href="https://github.com/bugfishtm/Android-Web-App-Example/archive/refs/heads/main.zip">Download</a><br /><br />    
+  
   
 
 
@@ -627,7 +652,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
@@ -635,5 +660,7 @@
         <script src="javascripts/extra.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
