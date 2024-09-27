@@ -14,7 +14,7 @@ jobs:
     - name: Grant Permission for Gradlew
       run: chmod +x _source/gradlew
     - name: Build with Gradle
-      run: ./gradlew clean assembleDebug
+      run: _source/gradlew clean assembleDebug
     - name: Upload Android Build
       uses: actions/upload-artifact@v3
       with:
