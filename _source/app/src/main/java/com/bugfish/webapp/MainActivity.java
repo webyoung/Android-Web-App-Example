@@ -19,7 +19,7 @@ import java.net.URLDecoder;
 
 public class MainActivity extends AppCompatActivity {
     WebView mWebview    =   null;
-    String theUrl       =   "https://bugfish.eu";
+    String theUrl       =   "https://tinasky.com";
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
